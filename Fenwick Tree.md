@@ -1,5 +1,4 @@
-# algorithms
-Nickson's algorithms
+```cpp
 template <typename T>
 struct Fenwick {
     int n;
@@ -44,3 +43,4 @@ struct Fenwick {
         return x;
     }
 };
+```
