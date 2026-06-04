@@ -1,0 +1,2 @@
+# algorithms
+Nickson's algorithms
