@@ -1,0 +1,44 @@
+```cpp
+// 朴素算法 TLE
+#include<bits/stdc++.h>
+using namespace std;
+
+const int N=1010;
+int n,m;
+int f[N][N];
+
+int main(){
+  scanf("%d%d",&n,&m);
+
+  for(int i=1,v,w; i<=n; i++){ //枚举物品
+    scanf("%d%d",&v,&w);
+    for(int j=0; j<=m; j++){   //枚举体积
+      for(int k=0; k<=j/v; k++){ //枚举个数
+        f[i][j]=max(f[i][j],f[i-1][j-k*v]+k*w);
+      }
+    }
+  }
+  printf("%d\n",f[n][m]);
+}
+
+// 优化决策+滚动数组优化空间
+#include<bits/stdc++.h>
+using namespace std;
+
+const int N=1010;
+int n,m;
+int f[2][N];
+
+int main(){
+  scanf("%d%d",&n,&m);
+  
+  for(int i=1,v,w; i<=n; i++){ //枚举物品
+    scanf("%d%d",&v,&w);
+    for(int j=1; j<=m; j++){   //枚举体积
+      if(j<v) f[i&1][j]=f[i-1&1][j];
+      else f[i&1][j]=max(f[i-1&1][j],f[i&1][j-v]+w);
+    }
+  }
+  printf("%d\n",f[n&1][m]);
+}
+```
