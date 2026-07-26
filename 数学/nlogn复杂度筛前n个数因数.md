@@ -16,4 +16,12 @@ struct FactorsSieve {
         return f[x];
     }
 };
+// 创建筛子，计算 1 到 200 的所有因子
+// FactorsSieve fs(200);
+// 查询 36 的因子
+// vector<int> divs = fs.get(36);
+// cout << "36的因子: ";
+// for (int d : divs) {
+//    cout << d << " ";
+// }
 ```
