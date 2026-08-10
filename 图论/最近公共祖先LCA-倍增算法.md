@@ -16,4 +16,5 @@ int lca(int x,int y){ //倍增求lca
   for(int i=20;i>=0;i--)if(fa[x][i]!=fa[y][i]) x=fa[x][i],y=fa[y][i]; //x,y一起向上跳
   return fa[x][0];
 }
+// dfs(s,0)
 ```
