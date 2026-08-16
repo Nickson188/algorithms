@@ -1,12 +1,12 @@
 ```cpp
 const int N=100010;
-vector<pii> e[N];
+vector<pair<int,int>> e[N];
 int n,m,s;
 int d[N],vis[N];
 
 void dijkstra(){
   memset(d,0x3f,sizeof d); d[s]=0;
-  priority_queue<pii,vector<pii>,greater<pii> > q; //小根堆
+  priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>> > q; //小根堆
   q.push({0,s});
   while(q.size()){
     auto u=q.top().second; q.pop();
