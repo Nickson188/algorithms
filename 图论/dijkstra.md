@@ -8,6 +8,7 @@ void dijkstra(){
   memset(d,0x3f,sizeof d); d[s]=0;
   priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>> > q; //小根堆
   q.push({0,s});
+  // 注意先push边权,再push点
   while(q.size()){
     auto u=q.top().second; q.pop();
     if(vis[u])continue; vis[u]=1; //不是第1次出队就跳过，是就标记
