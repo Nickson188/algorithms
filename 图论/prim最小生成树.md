@@ -1,4 +1,5 @@
 ```cpp
+// Prim算法 O(n^2)
 const int N=5010;
 int n,m,cnt,ans;
 vector<pair<int,int>> e[N];
