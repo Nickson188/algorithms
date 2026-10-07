@@ -1,4 +1,5 @@
 ```cpp
+// Kruskal算法 O(mlogm)
 const int N=200010;
 int n,m;
 int fa[N],ans,tot;
