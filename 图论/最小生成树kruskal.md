@@ -22,4 +22,9 @@ void kruskal(){
   if(tot==n-1) printf("%d\n",ans);
   else puts("orz");
 }
+// for(int i=1,u,v,w;i<=m;i++){
+//    cin>>u>>v>>w;
+//    e[i]={w,{u,v}};
+//  }
+//  kruskal();
 ```
