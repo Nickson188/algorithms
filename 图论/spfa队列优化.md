@@ -1,4 +1,5 @@
 ```cpp
+// spfa算法 O(m~nm)
 const int N=10010,M=500010,inf=(1<<31)-1;
 int n,m,s,a,b,c;
 int h[N],to[M],w[M],ne[M],tot;
