@@ -1,4 +1,5 @@
 ```cpp
+// 倍增算法的预处理时间复杂度为 O(nlogn) 单次查询时间复杂度为 O(logn)
 const int N=500005;
 int n,m,s;
 vector<int> e[N];
