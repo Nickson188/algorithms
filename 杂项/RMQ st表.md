@@ -3,6 +3,7 @@ const int N = 2e5 + 10;
 int f[N][32];
 // f[i][j] 表示从起点 i 开始、长度为 2^j 的区间内的最大值
 int n;
+int sum[N];
 void build() {
 	int m = log2(n) + 1;
 	for (int j = 0; j < m; j ++)
